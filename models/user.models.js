@@ -1,3 +1,5 @@
+// created user model with validation for name, email, and password
+
 import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
