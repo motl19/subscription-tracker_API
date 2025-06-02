@@ -2,7 +2,7 @@
 
 import { Router } from 'express';
 
-import { signIn, signOut, signUp } from '../controllers/auth.controller';
+import { signIn, signOut, signUp } from '../controllers/auth.controller.js';
 
 
 const authRouter = Router();
