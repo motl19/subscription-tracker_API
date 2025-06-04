@@ -31,8 +31,3 @@ Prerequisites:
 // - Arcjet account for rate limiting and bot protection.
 // - Httpie testing tool for testing the endpoints.
 // - Environment variables set up for sensitive information (e.g., database connection strings, JWT secret).
-// - Install dependencies: Run `npm install` in the project root directory.
-// - Start the server: Run `npm start` or `node index.js` to start the backend service.
-// - Test the API endpoints using Postman or any API testing tool.
-// - Access the API documentation (if available) for details on endpoints and request/response formats.
-
