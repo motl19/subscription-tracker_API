@@ -31,3 +31,6 @@ export const getUserSubscriptions = async (req, res, next) => {
         next(e);
     }
 }
+
+//issues with accessing user subscriptions
+//need to check if the user is the same as the one in the request
