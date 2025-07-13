@@ -16,11 +16,10 @@ export const createSubscription = async (req, res, next) => {
 
 export const getUserSubscriptions = async (req, res, next) => {
     try {
-
-        // check if the user is the same as the one in the request
-        if (req.user.id == req.params.id) {
+        // Disallow access if the user is trying to access another user's subscriptions
+        if (req.user.id !== req.params.id) {
             const error = new Error('You cannot access other users subscriptions');
-            error.status = 403;
+            error.status = 401;
             throw error;
         }
 
@@ -31,6 +30,7 @@ export const getUserSubscriptions = async (req, res, next) => {
         next(e);
     }
 }
+
 
 //issues with accessing user subscriptions
 //need to check if the user is the same as the one in the request
