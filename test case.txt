@@ -1,0 +1,21 @@
+. Create Subscription
+Endpoint: POST /api/subscription
+Request: { "user_id": 101, "plan_id": 1, "payment_method": "card", "start_date": "2025-07-20" }
+Test Cases:
+
+Test Case	Description	Expected Result
+TC01	Create valid subscription	201 Created, subscription ID returned
+TC02	Create with missing user_id	400 Bad Request, validation error
+TC03	Create with invalid plan_id	404 Not Found or 400 Bad Request
+TC04	Create with expired payment method	402 Payment Required
+TC05	Create duplicate active subscription	409 Conflict or appropriate error
+
+
+2. Get Subscription Details
+Endpoint: GET /api/subscription/{id}
+Test Cases:
+
+Test Case	Description	Expected Result
+TC06	Fetch valid subscription ID	200 OK, subscription details returned
+TC07	Fetch invalid subscription ID	404 Not Found
+TC08	Unauthorized user	401 Unauthorized
