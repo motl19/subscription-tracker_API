@@ -1,4 +1,15 @@
-. Create Subscription
+// Quick Start:
+Follow these steps to get the project up and running:
+
+Prerequisites:
+// - Node.js installed on your machine.
+// - MongoDB instance running (local or cloud).
+// - Upstash account for email reminders and workflows.
+// - Arcjet account for rate limiting and bot protection.
+// - Httpie testing tool for testing the endpoints.
+// - Environment variables set up for sensitive information (e.g., database connection strings, JWT secret).
+
+1. Create Subscription
 Endpoint: POST /api/subscription
 Request: { "user_id": 101, "plan_id": 1, "payment_method": "card", "start_date": "2025-07-20" }
 Test Cases:

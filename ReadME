@@ -21,13 +21,3 @@ Backend project for a web application - Subscription Management System
 // Logging Mechanism: For better debugging and monitoring.
 // Email Reminders: Automating smart email reminders with workflows using Upstash.
 
-// Quick Start:
-Follow these steps to get the project up and running:
-
-Prerequisites:
-// - Node.js installed on your machine.
-// - MongoDB instance running (local or cloud).
-// - Upstash account for email reminders and workflows.
-// - Arcjet account for rate limiting and bot protection.
-// - Httpie testing tool for testing the endpoints.
-// - Environment variables set up for sensitive information (e.g., database connection strings, JWT secret).
